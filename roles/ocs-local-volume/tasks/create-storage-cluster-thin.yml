@@ -1,6 +1,6 @@
 
 - name: Create the StorageCluster object
-  command: oc apply -f {{ role_path }}/files/storagecluster-thin.yml
+  command: oc apply -f {{ role_path }}/files/storagecluster-thin.yaml
   register: reg_storagecluster
   changed_when: reg_storagecluster is not search(' unchanged')
 
